@@ -1,13 +1,19 @@
 {
   "name": "webhook-delivery-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Reliable Webhook Delivery Service with At-Least-Once Delivery, Smart Retries, and Circuit Breaker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "demo": "node scripts/demo.js",
+    "test": "node scripts/demo.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  }
 }
